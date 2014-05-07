@@ -19,6 +19,11 @@
 		901861CD191A7E4E003C624D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901861B5191A7E4E003C624D /* UIKit.framework */; };
 		901861D5191A7E4E003C624D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 901861D3191A7E4E003C624D /* InfoPlist.strings */; };
 		901861D7191A7E4E003C624D /* PhoneHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 901861D6191A7E4E003C624D /* PhoneHelperTests.m */; };
+		901861E5191A7F2E003C624D /* DJPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 901861E4191A7F2E003C624D /* DJPMainViewController.m */; };
+		901861E9191A801B003C624D /* DJPWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 901861E8191A801B003C624D /* DJPWelcomeViewController.m */; };
+		90ADB7AD191A86AF00A5C84A /* DJPCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ADB7AB191A86AF00A5C84A /* DJPCallViewController.m */; };
+		90ADB7AE191A86AF00A5C84A /* DJPCallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90ADB7AC191A86AF00A5C84A /* DJPCallViewController.xib */; };
+		90ADB7B1191A893F00A5C84A /* UIViewController+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ADB7B0191A893F00A5C84A /* UIViewController+Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,16 @@
 		901861D2191A7E4E003C624D /* PhoneHelperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhoneHelperTests-Info.plist"; sourceTree = "<group>"; };
 		901861D4191A7E4E003C624D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		901861D6191A7E4E003C624D /* PhoneHelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneHelperTests.m; sourceTree = "<group>"; };
+		901861E1191A7EF5003C624D /* PhoneHelperDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneHelperDefine.h; sourceTree = "<group>"; };
+		901861E3191A7F2E003C624D /* DJPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJPMainViewController.h; sourceTree = "<group>"; };
+		901861E4191A7F2E003C624D /* DJPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJPMainViewController.m; sourceTree = "<group>"; };
+		901861E7191A801B003C624D /* DJPWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJPWelcomeViewController.h; sourceTree = "<group>"; };
+		901861E8191A801B003C624D /* DJPWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJPWelcomeViewController.m; sourceTree = "<group>"; };
+		90ADB7AA191A86AF00A5C84A /* DJPCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJPCallViewController.h; sourceTree = "<group>"; };
+		90ADB7AB191A86AF00A5C84A /* DJPCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJPCallViewController.m; sourceTree = "<group>"; };
+		90ADB7AC191A86AF00A5C84A /* DJPCallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DJPCallViewController.xib; sourceTree = "<group>"; };
+		90ADB7AF191A893F00A5C84A /* UIViewController+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Category.h"; sourceTree = "<group>"; };
+		90ADB7B0191A893F00A5C84A /* UIViewController+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Category.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +122,9 @@
 		901861B7191A7E4E003C624D /* PhoneHelper */ = {
 			isa = PBXGroup;
 			children = (
-				901861C0191A7E4E003C624D /* DJPAppDelegate.h */,
-				901861C1191A7E4E003C624D /* DJPAppDelegate.m */,
-				901861C3191A7E4E003C624D /* Images.xcassets */,
+				901861EA191A81FF003C624D /* Category */,
+				901861E2191A7F1D003C624D /* Class */,
+				901861E0191A7EC5003C624D /* ProjectFiles */,
 				901861B8191A7E4E003C624D /* Supporting Files */,
 			);
 			path = PhoneHelper;
@@ -122,6 +137,7 @@
 				901861BA191A7E4E003C624D /* InfoPlist.strings */,
 				901861BD191A7E4E003C624D /* main.m */,
 				901861BF191A7E4E003C624D /* PhoneHelper-Prefix.pch */,
+				901861E1191A7EF5003C624D /* PhoneHelperDefine.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -142,6 +158,55 @@
 				901861D3191A7E4E003C624D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		901861E0191A7EC5003C624D /* ProjectFiles */ = {
+			isa = PBXGroup;
+			children = (
+				901861C0191A7E4E003C624D /* DJPAppDelegate.h */,
+				901861C1191A7E4E003C624D /* DJPAppDelegate.m */,
+				901861C3191A7E4E003C624D /* Images.xcassets */,
+			);
+			name = ProjectFiles;
+			sourceTree = "<group>";
+		};
+		901861E2191A7F1D003C624D /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				90ADB7A9191A86A300A5C84A /* Call */,
+				901861E6191A8002003C624D /* Welcome */,
+				901861E3191A7F2E003C624D /* DJPMainViewController.h */,
+				901861E4191A7F2E003C624D /* DJPMainViewController.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		901861E6191A8002003C624D /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				901861E7191A801B003C624D /* DJPWelcomeViewController.h */,
+				901861E8191A801B003C624D /* DJPWelcomeViewController.m */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		901861EA191A81FF003C624D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				90ADB7AF191A893F00A5C84A /* UIViewController+Category.h */,
+				90ADB7B0191A893F00A5C84A /* UIViewController+Category.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		90ADB7A9191A86A300A5C84A /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				90ADB7AA191A86AF00A5C84A /* DJPCallViewController.h */,
+				90ADB7AB191A86AF00A5C84A /* DJPCallViewController.m */,
+				90ADB7AC191A86AF00A5C84A /* DJPCallViewController.xib */,
+			);
+			path = Call;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				901861BC191A7E4E003C624D /* InfoPlist.strings in Resources */,
+				90ADB7AE191A86AF00A5C84A /* DJPCallViewController.xib in Resources */,
 				901861C4191A7E4E003C624D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,8 +306,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90ADB7B1191A893F00A5C84A /* UIViewController+Category.m in Sources */,
 				901861BE191A7E4E003C624D /* main.m in Sources */,
+				90ADB7AD191A86AF00A5C84A /* DJPCallViewController.m in Sources */,
 				901861C2191A7E4E003C624D /* DJPAppDelegate.m in Sources */,
+				901861E9191A801B003C624D /* DJPWelcomeViewController.m in Sources */,
+				901861E5191A7F2E003C624D /* DJPMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +431,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhoneHelper/PhoneHelper-Prefix.pch";
 				INFOPLIST_FILE = "PhoneHelper/PhoneHelper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -374,6 +445,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhoneHelper/PhoneHelper-Prefix.pch";
 				INFOPLIST_FILE = "PhoneHelper/PhoneHelper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -438,6 +510,7 @@
 				901861DC191A7E4E003C624D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		901861DD191A7E4E003C624D /* Build configuration list for PBXNativeTarget "PhoneHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +519,7 @@
 				901861DF191A7E4E003C624D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

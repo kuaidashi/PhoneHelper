@@ -1,5 +1,5 @@
 //
-//  DJPAppDelegate.h
+//  DJPCallViewController.h
 //  PhoneHelper
 //
 //  Created by dujiepeng on 14-5-7.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DJPAppDelegate : UIResponder <UIApplicationDelegate>
-@property (strong, nonatomic) UIWindow *window;
+@interface DJPCallViewController : UIViewController
 
 @end
